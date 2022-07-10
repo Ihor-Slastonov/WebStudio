@@ -356,20 +356,12 @@ body {
 }
 
 .header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -398,6 +390,7 @@ body {
 }
 
 .site-nav__link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -442,6 +435,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .auth-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -458,15 +453,11 @@ body {
 }
 
 .auth-nav__icon {
-  width: 14px;
-  height: 14px;
   fill: currentColor;
   margin-right: 8px;
 }
 @media screen and (min-width: 1200px) {
   .auth-nav__icon {
-    width: 16px;
-    height: 16px;
     margin-right: 10px;
   }
 }
