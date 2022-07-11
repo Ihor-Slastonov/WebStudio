@@ -108,13 +108,18 @@
 }
 
 .mob-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
-  background-color: #ffffff;
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: #ffffff;
+  }
+  @include tablet{
+    display: none;
+  }
 }
 .is-hidden {
   visibility: hidden;
