@@ -216,12 +216,6 @@ body {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
-  .modal {
-    min-width: 450px;
-    min-height: 609px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
