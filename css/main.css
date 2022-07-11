@@ -247,7 +247,7 @@ body {
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-button:hover, .close-button:focus {
+.close-button:hover {
   fill: var(--accent-color);
 }
 
@@ -386,8 +386,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -485,6 +485,24 @@ body {
 @media screen and (min-width: 1200px) {
   .auth-nav__icon {
     margin-right: 10px;
+  }
+}
+
+.mob-open {
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: transparent;
+  background-color: transparent;
+  border-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-open:hover, .mob-open:focus {
+  fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .mob-open {
+    display: none;
   }
 }
 
@@ -951,9 +969,10 @@ body {
   border: 1px solid #eeeeee;
   border-top: none;
 }
-@media screen and (min-width: 768px) {
-  .card-box .card-box:first-child {
-    padding-bottom: 56px;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-box-first {
+    padding: 20px 24px 56px;
   }
 }
 
