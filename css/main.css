@@ -1083,10 +1083,8 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-form-icon {
-    margin-left: 10px;
-  }
+.footer-form-icon {
+  margin-left: 10px;
 }
 
 .filter {
