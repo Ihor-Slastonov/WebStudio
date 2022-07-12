@@ -165,14 +165,12 @@
   &:focus {
     color: #2196f3;
   }
-}
-.mob-menu__link-current {
-  color: var(--accent-color);
+  &-current {
+    color: var(--accent-color);
+  }
 }
 
-// .mob-connect {
-//   margin-top: 302px;
-// }
+
 .mob-connect__item + .mob-connect__item {
   margin-top: 32px;
 }

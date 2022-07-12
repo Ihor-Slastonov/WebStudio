@@ -577,7 +577,6 @@ body {
 .mob-menu__link:hover, .mob-menu__link:focus {
   color: #2196f3;
 }
-
 .mob-menu__link-current {
   color: var(--accent-color);
 }
@@ -873,7 +872,6 @@ body {
   align-content: center;
   gap: 30px;
 }
-
 .clients__item {
   width: calc((100% - 30px) / 2);
   height: 92px;
@@ -888,7 +886,6 @@ body {
     width: calc((100% - 150px) / 6);
   }
 }
-
 .clients__link {
   width: 100%;
   height: 100%;
