@@ -906,6 +906,12 @@ body {
   background-color: var(--hero-bg-color);
 }
 
+.ff {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
 .container-address {
   text-align: center;
 }
@@ -935,6 +941,12 @@ body {
 
 .container-social {
   margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .container-social {
+    margin-top: 0;
+    margin-left: 165px;
+  }
 }
 
 .footer-social-text {
@@ -999,6 +1011,7 @@ body {
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1008,6 +1021,14 @@ body {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .footer-form-input {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .filter {
