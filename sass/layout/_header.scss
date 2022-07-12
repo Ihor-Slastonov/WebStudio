@@ -127,6 +127,10 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  overflow: auto;
+}
+.mob-menu__top {
+  margin-bottom: 50px;
 }
 .is-hidden {
   visibility: hidden;
