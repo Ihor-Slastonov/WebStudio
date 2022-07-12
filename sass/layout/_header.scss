@@ -108,6 +108,7 @@
 }
 
 .mob-menu {
+  z-index: 555;
   @media screen and (max-width: 767px) {
     position: fixed;
     top: 0;
@@ -120,6 +121,12 @@
   @include tablet{
     display: none;
   }
+}
+.mob-menu__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 .is-hidden {
   visibility: hidden;
@@ -159,9 +166,9 @@
   color: var(--accent-color);
 }
 
-.mob-connect {
-  margin-top: 302px;
-}
+// .mob-connect {
+//   margin-top: 302px;
+// }
 .mob-connect__item + .mob-connect__item {
   margin-top: 32px;
 }

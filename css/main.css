@@ -511,6 +511,9 @@ body {
   }
 }
 
+.mob-menu {
+  z-index: 555;
+}
 @media screen and (max-width: 767px) {
   .mob-menu {
     position: fixed;
@@ -526,6 +529,13 @@ body {
   .mob-menu {
     display: none;
   }
+}
+
+.mob-menu__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }
 
 .is-hidden {
@@ -565,10 +575,6 @@ body {
 
 .mob-menu__link-current {
   color: var(--accent-color);
-}
-
-.mob-connect {
-  margin-top: 302px;
 }
 
 .mob-connect__item + .mob-connect__item {
@@ -906,14 +912,27 @@ body {
   background-color: var(--hero-bg-color);
 }
 
-.ff {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .container-footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-footer-items {
+    flex-wrap: nowrap;
+  }
 }
 
 .container-address {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .container-address {
+    text-align: left;
+  }
 }
 
 .address {
@@ -946,6 +965,11 @@ body {
   .container-social {
     margin-top: 0;
     margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-social {
+    margin-left: 70px;
   }
 }
 
@@ -994,6 +1018,28 @@ body {
 .container-footer-form {
   margin-top: 60px;
 }
+@media screen and (min-width: 768px) {
+  .container-footer-form {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-footer-form {
+    margin-top: 0;
+    margin-left: 93px;
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .footer-form-text {
   display: block;
@@ -1004,6 +1050,11 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-text {
+    text-align: left;
+  }
 }
 
 .footer-form-input {
@@ -1022,12 +1073,17 @@ body {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-form-input {
-    display: block;
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-icon {
+    margin-left: 10px;
   }
 }
 
