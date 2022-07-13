@@ -62,6 +62,9 @@
   text-transform: uppercase;
 
   color: #ffffff;
+  @include desktop {
+    text-align: left;
+  }
 }
 .footer-social-list {
   display: flex;
